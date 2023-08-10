@@ -93,7 +93,7 @@ jobs:
       id: package
       run: |
         cd openwrt
-        git clone https://github.com/thinktip/luci-theme-neobird.git package/lean
+        git clone https://github.com/thinktip/luci-theme-neobird.git package/lean/neobird
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
